@@ -17,7 +17,7 @@ After completing this exercise, you should be able to discuss or answer the foll
   The data type that is returned by comparing two values are boolean values (true or false).
 
 - What does the `+=` "plus-equals" operator do?
-  The '+=' operator adds the value of the right operand to a variable and assigns the result to the variable.
+  The '+=' operator adds the value of the right operand to a variable and assigns the result to the variable; with numbers, it will add the value of the right operand to the existing number (e.g. a += 3), while for strings, it will concatenate the right operand to the existing variable (e.g. b += 'World').
 
 ## Notes
 
