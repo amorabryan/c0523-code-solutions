@@ -19,7 +19,7 @@ console.log('typeof grade:', typeof grade);
 
 const firstName = 'Bryan';
 const lastName = 'Amora';
-let fullName = firstName + ' ' + lastName;
+const fullName = firstName + ' ' + lastName;
 console.log('value of fullName:', fullName);
 console.log('typeof fullName:', typeof fullName);
 
@@ -33,6 +33,7 @@ const isSparta = headCount === 300;
 console.log('value of isSparta', isSparta);
 console.log('typeof isSparta:', typeof isSparta);
 
-const motto = (fullName += ' is the GOAT');
+let motto = fullName;
+motto += 'is the GOAT';
 console.log('value of motto:', motto);
 console.log('typeof motto:', typeof motto);
