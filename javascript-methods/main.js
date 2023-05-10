@@ -5,7 +5,8 @@ const maximumValue = Math.max(num1, num2, num3);
 console.log('maximumValue:', maximumValue);
 
 const heroes = ['spider-man', 'batman', 'venom', 'John Cena'];
-const randomNumber = Math.random(heroes) * heroes.length;
+let randomNumber = Math.random();
+randomNumber = randomNumber * heroes.length;
 const randomIndex = Math.floor(randomNumber);
 console.log('randomIndex:', randomIndex);
 
