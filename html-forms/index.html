@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Forms</title>
+  </head>
+  <body>
+    <h1>Coding Form!</h1>
+    <form>
+      <div class="coding_title">
+        <label for="email">Email</label>
+      </div>
+      <div class="html_forms">
+        <input type="email" id="email" name="user_email" />
+      </div>
+      <div class="coding_title">
+        <label for="question">Why is coding cool?</label>
+      </div>
+      <div class="html_forms">
+        <select id="reason" name="user_opinion">
+          <option value="not_an_option">Select an option</option>
+          <option value="interesting">Because it&apos;s interesting</option>
+          <option value="fun">Because it&apos;s fun</option>
+          <option value="powerful">Because it&apos;s powerful</option>
+        </select>
+      </div>
+      <div class="coding_title">
+        <label for="language">Favorite Language (choose one)</label>
+      </div>
+      <div class="html_forms">
+        <input type="radio" name="language" id="languageOne" value="HTML" />
+        <label for="languageOne">HTML</label>
+        <input type="radio" name="language" id="languageTwo" value="CSS" />
+        <label for="languageTwo">CSS</label>
+        <input
+          type="radio"
+          name="language"
+          id="languageThree"
+          value="JavaScript" />
+        <label for="languageThree">JavaScript</label>
+      </div>
+      <div class="coding_title">
+        <label for="signup"
+          >Would you like to sign up for more information?</label
+        >
+      </div>
+      <div class="html_forms">
+        <input type="checkbox" id="sign" name="signup" />
+        <label for="sign">Sign Me Up!</label>
+      </div>
+      <div class="coding_title">
+        <label for="comments">Comments</label>
+      </div>
+      <div class="html_forms">
+        <textarea
+          id="comments"
+          name="userComments"
+          cols="30"
+          rows="8"></textarea>
+      </div>
+      <div class="html_forms">
+        <input type="submit" value="Submit" />
+      </div>
+    </form>
+  </body>
+</html>
