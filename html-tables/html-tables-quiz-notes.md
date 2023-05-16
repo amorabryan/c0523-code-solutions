@@ -6,10 +6,11 @@ After completing this exercise, you should be able to discuss or answer the foll
 
 - What are the six primary HTML elements for creating tables?
 <table> = defines a table
-<tr> = defines a table row
-<th> = defines a table header cell (for column headings)
-<caption> = Defines a caption for a table
-<col> = defines attributes for one or more columns in a table
+<tr> - represents rows.
+<td> - used to create data cells.
+<th> - used to add table headings.
+<thead> - adds a separate header to the table.
+<tbody> - shows the main body of the table.
 
 - What purpose do the `thead` and `tbody` elements serve?
 <thead> = defines the header section of the table
