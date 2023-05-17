@@ -1,5 +1,5 @@
 body {
-  line-height: 1.5;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 h1,
@@ -13,5 +13,5 @@ h2 {
 }
 
 p {
-  font-family: 'Roboto Condensed', sans-serif;
+  line-height: 1.5;
 }
