@@ -1,0 +1,195 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-family: Avenir, sans-serif;
+  border-bottom: 1px solid lightgray;
+}
+
+.taskbar,
+.directory {
+  display: flex;
+  width: 100%;
+}
+
+button {
+  background-color: #294464;
+  color: white;
+  border-radius: 5px;
+  font-family: Avenir, sans-serif;
+}
+
+h1,
+h2 {
+  font-family: 'Tiempos Headline', sans-serif;
+}
+
+h3,
+p {
+  font-family: Avenir, sans-serif;
+}
+
+.blue-logo,
+.pages {
+  display: flex;
+  align-items: center;
+}
+
+.directory {
+  justify-content: space-evenly;
+}
+
+.blue-logo {
+  flex-basis: 100%;
+  justify-content: left;
+  margin-left: 6rem;
+  height: 6rem;
+}
+
+.blue-logo > img {
+  height: 125px;
+  width: 125px;
+}
+
+.pages {
+  color: gray;
+  justify-content: center;
+  margin-right: 1rem;
+}
+
+.pages > button,
+.button > button {
+  padding: 9px 15px;
+}
+
+.row-one {
+  display: flex;
+  background: url('images/hero.jpg') no-repeat center;
+  background-size: cover;
+  position: relative;
+  max-width: 80%;
+  height: 500px;
+  margin: 30px auto;
+  padding: 30px 40px 25px;
+  flex-direction: column;
+}
+
+.overlay {
+  background: linear-gradient(transparent, rgba(53, 53, 53, 0.75));
+  position: absolute;
+  inset: 0;
+  padding-bottom: 30px;
+}
+
+.title,
+.description,
+.button {
+  width: 50%;
+  color: white;
+  position: relative;
+}
+
+.description {
+  line-height: 1.7;
+}
+
+.button > button,
+.column-one-third > button {
+  height: 40px;
+  width: 150px;
+  justify-content: center;
+  align-items: center;
+}
+
+.row-two,
+.row-three {
+  display: flex;
+  padding: 10px;
+  background-color: rgb(250, 250, 250);
+  color: rgb(99, 99, 99);
+  justify-content: center;
+  text-align: center;
+}
+
+.full-column {
+  width: 50%;
+  margin-top: 10px;
+}
+
+.cities {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 40%;
+  padding: 20px;
+  align-items: center;
+}
+
+.row-four {
+  display: flex;
+  color: rgb(99, 99, 99);
+  border-top: 1px solid lightgray;
+}
+
+.column-one-third {
+  display: flex;
+  flex-direction: column;
+  flex-basis: calc(100% / 3);
+  margin: 15px auto;
+  padding: 10px 30px;
+  justify-content: center;
+}
+
+.column-one-third > button {
+  display: flex;
+  padding: 9px 15px;
+  align-self: flex-end;
+}
+
+.row-five {
+  display: flex;
+  background-color: rgb(99, 99, 99);
+  padding: 50px 30px;
+  align-items: baseline;
+}
+
+.row-five > .column-one-fourth {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  flex-basis: 25%;
+  align-items: flex-start;
+  color: white;
+}
+
+.column-half {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  color: white;
+  padding: 0 20px;
+  margin: 15px 65px;
+}
+
+.white-logo > img {
+  display: flex;
+  max-width: 30%;
+}
+
+.white-logo,
+h3,
+.address {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.row-six {
+  display: flex;
+  background-color: rgb(236 236 236);
+  padding: 10px;
+}
+
+.row-six > p {
+  padding: 10px 20px;
+  color: rgb(99 99 99);
+}
