@@ -14,9 +14,9 @@ $buttonHot.addEventListener('click', function () {
     $buttonHot.className = 'hot-button ' + 'tepid';
   } else if (clicked < 13) {
     $buttonHot.className = 'hot-button ' + 'warm';
-  } else if (clicked < 16) {
+  } else if (clicked < 15) {
     $buttonHot.className = 'hot-button ' + 'hot';
-  } else if (clicked > 16) {
+  } else if (clicked >= 16) {
     $buttonHot.className = 'hot-button ' + 'nuclear';
   }
 });
