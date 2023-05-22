@@ -18,11 +18,13 @@ button {
   color: white;
   border-radius: 5px;
   font-family: Avenir, sans-serif;
+  border: 0;
 }
 
 h1,
 h2 {
   font-family: 'Tiempos Headline', sans-serif;
+  font-weight: 300;
 }
 
 h3,
@@ -43,7 +45,7 @@ p {
 .blue-logo {
   flex-basis: 100%;
   justify-content: left;
-  margin-left: 6rem;
+  margin-left: 7.5rem;
   height: 6rem;
 }
 
@@ -55,7 +57,7 @@ p {
 .pages {
   color: gray;
   justify-content: center;
-  margin-right: 1rem;
+  margin: 0 1.2rem;
 }
 
 .pages > button,
