@@ -8,7 +8,7 @@ After completing this exercise, you should be able to discuss or answer the foll
   The 'className' property is a string that contains the names of the CSS classes applied to that element.
 
 - How do you update the CSS class attribute of an element using JavaScript?
-  Using the 'classList' property provides methods to add, remove, toggle, or check for the presence of a class.
+  Using the 'className' property lets us update the CSS class attribute of an element using JavaScript.
 
 - What is the `textContent` property of element objects?
   The 'textContent' property of element objects is a string that represents the text content of the element and its descendants without HTML or markup.
