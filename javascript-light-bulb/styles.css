@@ -1,0 +1,22 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 18rem auto;
+}
+
+.light-on {
+  background-color: #faea84;
+  border-radius: 50%;
+  box-shadow: 0 0 3px 4px #fbeb85;
+  width: 200px;
+  height: 200px;
+}
+
+.light-off {
+  background-color: #252525;
+  border-radius: 50%;
+  box-shadow: 0 0 3px 4px #1d1d1e;
+  width: 200px;
+  height: 200px;
+}
