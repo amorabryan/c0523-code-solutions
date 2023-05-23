@@ -39,11 +39,12 @@ p {
 }
 
 .directory {
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 1.8rem;
 }
 
 .blue-logo {
-  flex-basis: 60%;
+  flex-basis: 40%;
   justify-content: left;
   margin-left: 6.4rem;
   height: 6rem;
@@ -57,7 +58,10 @@ p {
 .pages {
   color: gray;
   justify-content: center;
-  margin: 0 1.4rem;
+}
+
+.pages > p {
+  text-size-adjust: small;
 }
 
 .pages > button,
