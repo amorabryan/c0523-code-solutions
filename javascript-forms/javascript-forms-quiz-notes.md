@@ -23,10 +23,10 @@ After completing this exercise, you should be able to discuss or answer the foll
   It will refresh the page and reset the form.
 
 - What property of a form element object contains all of the form's controls.
-  HTMLFormElement
+  form.elements
 
 - What property of a form control object gets and sets its value?
-  .elements
+  .value
 
 - What is one risk of writing a lot of code without checking to see if it works so far?
   You won't know where your error occurs.
