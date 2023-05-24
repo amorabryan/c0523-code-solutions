@@ -1,0 +1,47 @@
+body {
+  font-family: Barlow, sans-serif;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  background-color: #f7f8fa;
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+h2,
+.description {
+  text-align: center;
+}
+
+.column-fourth {
+  flex-basis: 25%;
+}
+
+.img > img {
+  width: 75%;
+}
+
+.img,
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo > img {
+  width: 25%;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+p {
+  font-size: 0.8rem;
+}
