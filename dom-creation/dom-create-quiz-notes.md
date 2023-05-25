@@ -23,8 +23,8 @@ After completing this exercise, you should be able to discuss or answer the foll
   classList, setAttribute
 
 - What are two advantages of defining a function to do create something (like the work of creating a DOM tree)?
-  You can create application that update the data of the page without refreshing
-  You can create applications that are customizable by the user and then change the layout of the page without a refresh
+  You can use the function for many different purposes
+  You can control when the data appears
 
 ## Notes
 
