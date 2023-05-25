@@ -21,7 +21,7 @@ After completing this exercise, you should be able to discuss or answer the foll
   .remove();
 
 - If you wanted to insert new clickable DOM elements into the page using JavaScript, how could you avoid adding an event listener to every new element individually?
-  Using event delegation
+  Using event event lister to the parent element and it'll catch any click events on the child elements
 
 ## Notes
 
