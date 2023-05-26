@@ -16,18 +16,18 @@ const books = [
   },
 ];
 
-console.log('first book:', books[0]);
-console.log('second author:', books[1].author);
-console.log('typeof third title:', typeof books[2].title);
+console.log('books:', books);
+console.log('typeof books:', typeof books);
 
 const booksJSON = JSON.stringify(books);
+
 console.log('JSON books:', booksJSON);
 console.log('typeof booksJSON:', typeof booksJSON);
 
 const student = '{"id": 11147, "name": "John"}';
 
-console.log('students:', student);
-console.log('typeof students:', typeof student);
+console.log('student:', student);
+console.log('typeof student:', typeof student);
 
 const parseJSON = JSON.parse(student);
 console.log('parseJSON:', parseJSON);
