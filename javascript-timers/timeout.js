@@ -1,5 +1,5 @@
+const $message = document.querySelector('.message');
 function delay() {
-  const $message = document.querySelector('.message');
   $message.textContent = 'Hello There';
 }
 
