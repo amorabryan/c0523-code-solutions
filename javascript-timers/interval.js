@@ -1,13 +1,13 @@
 let count = 4;
+const $countdownDisplay = document.querySelector('.countdown-display');
 
 const countdown = function startCountdown() {
-  const $countdownDisplay = document.querySelector('.countdown-display');
   count--;
   $countdownDisplay.textContent = count;
   if (count < 1) {
     $countdownDisplay.textContent = '~Earth Beeeelooowww Us~';
-    clearInterval(countdown);
+    clearInterval(interval);
   }
 };
 
-setInterval(countdown, 1000);
+const interval = setInterval(countdown, 1000);
