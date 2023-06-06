@@ -1,0 +1,59 @@
+body {
+  font-family: 'DM Sans', sans-serif;
+}
+
+.header {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.row-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row-description {
+  display: flex;
+  align-items: flex-start;
+}
+
+.column-fifth {
+  flex-basis: 20%;
+  margin: 0 auto;
+  padding: 0 0.5rem;
+}
+
+.img {
+  flex-basis: 100%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.description {
+  font-weight: bold;
+}
+
+.size,
+.retail {
+  color: lightgray;
+  font-weight: normal;
+}
+
+p {
+  font-size: small;
+}
+
+.deal {
+  background-color: rgb(255, 242, 231);
+}
