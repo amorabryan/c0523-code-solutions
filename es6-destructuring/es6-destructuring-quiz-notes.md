@@ -17,6 +17,7 @@ After completing this exercise, you should be able to discuss or answer the foll
 
 - How can you tell the difference between destructuring and creating `Object`/`Array` literals?
   Array destructuring extracts values from an array. But object destructuring extracts values from a JavaScript object.
+  Creating object/array literals would be on the right side, whereas destructuring is on the left.
 
 ## Notes
 
