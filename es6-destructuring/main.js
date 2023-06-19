@@ -14,22 +14,10 @@ const { title, author, libraryID } = book1;
 const { title: title2, author: author2, libraryID: libraryID2 } = book2;
 
 console.log(
-  'The title of the book is ' +
-    title +
-    ', the author is ' +
-    author +
-    ', and the library ID is ' +
-    libraryID +
-    '.'
+  `The title of the book is ${title}, the author is ${author}, and the library ID is ${libraryID}.`
 );
 console.log(
-  'The title of the book is ' +
-    title2 +
-    ', the author is ' +
-    author2 +
-    ', and the library ID is ' +
-    libraryID2 +
-    '.'
+  `The title of the book is ${title2}, the author is ${author2}, and the library ID is ${libraryID2}.`
 );
 
 const library = [
