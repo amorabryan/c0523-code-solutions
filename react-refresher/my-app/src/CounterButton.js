@@ -2,17 +2,17 @@ import { useState } from 'react';
 
 export default function CounterButton() {
   const [count, setCount] = useState(0);
-  function handleClick1() {
+  function handleDecrement() {
     setCount(count - 1);
   }
-  function handleClick2() {
+  function handleIncrement() {
     setCount(count + 1);
   }
   return (
     <div className="counter">
-      <button onClick={handleClick1}>Down</button>
+      <button onClick={handleDecrement}>Down</button>
       <p>{count}</p>
-      <button onClick={handleClick2}>Up</button>
+      <button onClick={handleIncrement}>Up</button>
     </div>
   );
 }
