@@ -1,15 +1,11 @@
 import { useState } from 'react';
+import './ToggleSwitch.css';
 
 export default function ToggleSwitch() {
   const [toggle, setToggle] = useState('false');
-  const [switchText, setSwitchText] = useState('OFF');
+  const switchText = toggle ? 'ON' : 'OFF';
 
   function activateSwitch() {
-    if (toggle) {
-      setSwitchText('ON');
-    } else {
-      setSwitchText('OFF');
-    }
     setToggle(!toggle);
   }
 
