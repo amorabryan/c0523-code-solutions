@@ -4,7 +4,7 @@ export default function ValidatedInput() {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
-  function handleEvent(event) {
+  function onPasswordChange(event) {
     event.preventDefault();
     const inputPassword = event.target.value;
     if (inputPassword.length === 0) {
@@ -27,7 +27,7 @@ export default function ValidatedInput() {
           type="password"
           name="password"
           value={password}
-          onInput={handleEvent}
+          onInput={onPasswordChange}
           required
         />{' '}
         {error && <i className="fas fa-times error"></i>}
