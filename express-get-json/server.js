@@ -22,6 +22,7 @@ const grades = {
 };
 
 const app = express();
+const port = 8080;
 
 app.get('/api/grades', (req, res) => {
   const gradeArray = [];
@@ -31,7 +32,6 @@ app.get('/api/grades', (req, res) => {
   res.json(gradeArray);
 });
 
-const port = 8080;
 app.listen(port, () => {
   console.log(`server is listening at ${port}`);
 });
