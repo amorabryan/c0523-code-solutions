@@ -14,10 +14,10 @@ After completing this exercise, you should be able to discuss or answer the foll
   the GET method
 
 - What is on the first line of an HTTP **request** message?
-  The request line
+  An HTTP method, the request target, and the HTTP version.
 
 - What is on the first line of an HTTP **response** message?
-  The status line
+  The protocol version, a status code, and a status text.
 
 - What are HTTP headers?
   additional pieces of information included in both the request and response exchanged between client and server
