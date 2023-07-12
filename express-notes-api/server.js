@@ -6,10 +6,18 @@ const port = 8080;
 
 app.use(express.json());
 
+async function generateNotes() {
+  const journal = await readFile('data.json', 'utf8');
+  return JSON.parse(journal);
+}
+
+async function updateNotes(data) {
+  await writeFile('data.json', JSON.stringify(data, null, 2), 'utf8');
+}
+
 app.get('/api/notes', async (req, res) => {
   try {
-    const journal = await readFile('data.json', 'utf8');
-    const data = JSON.parse(journal);
+    const data = generateNotes();
 
     const notesArray = [];
     for (const note in data.notes) {
@@ -20,13 +28,13 @@ app.get('/api/notes', async (req, res) => {
     console.error(
       'An error occurred while trying to view the form, please try again.'
     );
+    res.status(500).json({ error: 'An unexpected error occurred.' });
   }
 });
 
 app.get('/api/notes/:id', async (req, res) => {
   try {
-    const journal = await readFile('data.json', 'utf8');
-    const data = JSON.parse(journal);
+    const data = generateNotes();
 
     const id = Number(req.params.id);
 
@@ -61,8 +69,7 @@ app.post('/api/notes', async (req, res) => {
     if (!req.body.content) {
       return res.status(400).json({ error: 'Content is a required field' });
     }
-    const journal = await readFile('data.json', 'utf8');
-    const data = JSON.parse(journal);
+    const data = generateNotes();
     const newNoteId = data.nextId;
 
     const newNote = {
@@ -74,7 +81,7 @@ app.post('/api/notes', async (req, res) => {
 
     data.nextId++;
 
-    await writeFile('data.json', JSON.stringify(data, null, 2), 'utf8');
+    await updateNotes(data);
 
     res.status(201).json(newNote);
   } catch (error) {
@@ -88,8 +95,7 @@ app.post('/api/notes', async (req, res) => {
 
 app.delete('/api/notes/:id', async (req, res) => {
   try {
-    const journal = await readFile('data.json', 'utf8');
-    const data = JSON.parse(journal);
+    const data = generateNotes();
     const id = Number(req.params.id);
 
     if (Number.isNaN(id) || !Number.isInteger(id) || id < 1) {
@@ -104,7 +110,7 @@ app.delete('/api/notes/:id', async (req, res) => {
 
     delete data.notes[id];
 
-    await writeFile('data.json', JSON.stringify(data, null, 2), 'utf8');
+    await updateNotes(data);
 
     res.sendStatus(204);
   } catch (error) {
@@ -115,8 +121,7 @@ app.delete('/api/notes/:id', async (req, res) => {
 
 app.put('/api/notes/:id', async (req, res) => {
   try {
-    const journal = await readFile('data.json', 'utf8');
-    const data = JSON.parse(journal);
+    const data = generateNotes();
     const currentId = Number(req.params.id);
 
     if (
@@ -146,7 +151,7 @@ app.put('/api/notes/:id', async (req, res) => {
 
     data.notes[currentId] = updatedNote;
 
-    await writeFile('data.json', JSON.stringify(data, null, 2), 'utf8');
+    await updateNotes(data);
 
     res.sendStatus(204);
   } catch (error) {
