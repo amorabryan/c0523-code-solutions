@@ -1,0 +1,43 @@
+body {
+  height: 100vh;
+  align-items: center;
+  display: grid;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.img {
+  padding: 0 5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.button {
+  background-color: white;
+  border: white;
+}
+
+.fa-circle {
+  padding: 5px;
+}
+
+.button:hover,
+.fa-circle:hover {
+  cursor: pointer;
+}
