@@ -17,8 +17,8 @@ After completing this exercise, you should be able to discuss or answer the foll
 
 - In the expression
   `js
-    foo(() => 42);
-    `
+  foo(() => 42);
+  `
 
   - Identify the arrow function
     () => 42
@@ -37,10 +37,10 @@ After completing this exercise, you should be able to discuss or answer the foll
 
 - In the expression
   `` js
-    bar((y) => {
-      console.log(`4y = ${4 * y}`);
-    });
-     `` - Identify the arrow function
+  bar((y) => {
+    console.log(`4y = ${4 * y}`);
+  });
+   `` - Identify the arrow function
   (y) => {console.log(`4y = ${4 * y}`); }
 
       - How many arguments does the arrow function take?
