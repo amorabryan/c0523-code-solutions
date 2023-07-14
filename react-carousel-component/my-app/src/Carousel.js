@@ -25,7 +25,7 @@ export default function Carousel({ images }) {
 
   const nextImage = useCallback(() => {
     setCurrentIndex((currentIndex + 1) % images.length);
-  }, [currentIndex, images.length]);
+  }, [currentIndex, images]);
 
   useEffect(() => {
     const timer = setTimeout(() => nextImage(), 3000);
