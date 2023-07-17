@@ -1,2 +1,2 @@
-select count("inventoryId") as "physicalInventory"
+select count(*) as "physicalInventory"
 from "inventory";
