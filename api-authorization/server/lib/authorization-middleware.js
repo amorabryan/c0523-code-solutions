@@ -5,8 +5,11 @@ import { ClientError } from './client-error.js';
 export function authMiddleware(req, res, next) {
   /* your code here */
   const authHeader = req.get('Authorization');
+  if (!authHeader) {
+    throw new ClientError(401, 'Authentication Required');
+  }
   const token = authHeader.split('Bearer ')[1];
-  if (!authHeader || !token) {
+  if (!token) {
     throw new ClientError(401, 'Authentication Required');
   }
   const payload = jwt.verify(token, process.env.TOKEN_SECRET);
