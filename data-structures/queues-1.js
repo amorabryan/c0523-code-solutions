@@ -11,9 +11,5 @@ export function takeFront(queue) {
 }
 
 export function isEmpty(queue) {
-  if (queue.peek() === undefined) {
-    return true;
-  } else {
-    return false;
-  }
+  return queue.peek() === undefined;
 }
