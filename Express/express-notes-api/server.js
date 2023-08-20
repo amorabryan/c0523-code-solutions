@@ -55,12 +55,10 @@ app.get('/api/notes/:id', async (req, res) => {
     console.error(
       'An error occurred while trying to view the form, please try again.'
     );
-    res
-      .status(500)
-      .json({
-        error:
-          'An error occurred while trying to view the note, please try again.',
-      });
+    res.status(500).json({
+      error:
+        'An error occurred while trying to view the note, please try again.',
+    });
   }
 });
 
